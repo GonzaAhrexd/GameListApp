@@ -1,1 +1,20 @@
-<p>home works!</p>
+<main>
+    <div class="flex flex-col items-center justify-center">
+        <h1 class="text-4xl ">Lista de juegos</h1>
+    </div>
+    @if(!showAddGame){
+        <div class="flex flex-col items-center justify-center ">
+            <AgregarJuego />
+        </div>
+    }
+    <!-- Haz que salga abajo a la derecha -->
+    <div class="fixed bottom-0 right-0 p-4">
+        <button class="bg-lime-500 hover:bg-lime-700 text-white font-bold py-2 px-4 rounded-xl mt-4" (click)="addGame()">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6 h-8 w-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            </svg>
+        </button>
+    </div>
+</main>

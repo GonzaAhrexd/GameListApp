@@ -1,0 +1,26 @@
+<form
+class="flex flex-col items-center justify-center bg-lime-800 rounded-lg m-2 p-4"
+
+[formGroup]="form()">
+    <div class="flex flex-col">
+        <label for="nombre" class="font-bold text-lg">Nombre</label>
+        <input type="text" class="rounded-lg pl-2 h-8 w-full bg-lime-600" formControlName="nombre" id="nombre">
+    </div>
+
+    <div class="flex flex-col">
+        <label for="fecha_de_salida" class="font-bold text-lg">Fecha de Salida</label>
+        <input type="date" class="rounded-lg w-full pl-2 h-8 bg-lime-600" formControlName="fecha_de_salida" id="fecha_de_salida">
+    </div>
+    
+    <div class="flex flex-col">
+        <label for="categoria" class="font-bold text-lg">Categoría</label>
+            <input type="text" class="rounded-lg w-full pl-2 h-8 bg-lime-600" id="categoria"  formControlName="categoria">
+    </div>
+    <div class="flex flex-col">
+        <label for="imagen" class="font-bold text-lg">Imagen</label>
+            <input type="text" class="rounded-lg w-full pl-2 h-8 bg-lime-600" id="imagen" formControlName="imagen">
+    </div>
+
+    <div class="bg-lime-500 hover:bg-lime-700 text-white font-bold py-2 px-4 rounded-xl mt-4" (click)="agregarJuego()">Agregar juego</div>
+
+</form>
