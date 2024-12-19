@@ -16,3 +16,12 @@ export const addGame = async (game: game) => {
         console.error(error)
     }
 }
+
+export const getGames = async () => {
+    try {
+        const response = await axios.get('/games')
+        return response.data
+    } catch (error) {
+        console.error(error)
+    }
+}

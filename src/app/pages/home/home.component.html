@@ -2,9 +2,13 @@
     <div class="flex flex-col items-center justify-center">
         <h1 class="text-4xl ">Lista de juegos</h1>
     </div>
-    @if(!showAddGame){
+    @if(showAddGame){
         <div class="flex flex-col items-center justify-center ">
             <AgregarJuego />
+        </div>
+    }@else {
+        <div>
+            <GameList />
         </div>
     }
     <!-- Haz que salga abajo a la derecha -->
