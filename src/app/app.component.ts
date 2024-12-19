@@ -5,8 +5,14 @@ import { RouterOutlet } from '@angular/router';
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  template: `
+  <main  >
+  <!-- <Navbar nombre="Gonza" /> -->
+    <router-outlet />
+  <!-- <probando /> -->
+  </main>
+  `,
+  // templateUrl: './app.component.html',
 })
 export class AppComponent {
   title = 'GamesUI';
